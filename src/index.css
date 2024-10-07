@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+
+}
+::-webkit-scrollbar-thumb{
+    background: #181819;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+   background:#6556cd;
+   border-radius: 10px;
+}
+/* index.css */
+
+/* index.css */
+
+/* Container for the dropdown */
+.select {
+    width: 200px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Styling for the select element */
+.select select {
+    width: 100%;
+    padding: 10px 35px 10px 15px; /* Space for the icon */
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #3f3f46; /* zinc-700 */
+    color: #e2e8f0; /* zinc-100 */
+    border: 2px solid #3b82f6; /* blue-500 */
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Styling the down-arrow icon */
+.select .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent clicking on the icon */
+    font-size: 18px;
+    color: #e2e8f0; /* zinc-100 */
+}
+
+/* Hover and focus styles */
+.select select:hover,
+.select select:focus {
+    background-color: #334155; /* zinc-800 */
+    border-color: #2563eb; /* blue-600 */
+}
+
+/* Styling for dropdown options */
+.select select option {
+    background-color: #3f3f46; /* zinc-700 */
+    color: #e2e8f0; /* zinc-100 */
+}
